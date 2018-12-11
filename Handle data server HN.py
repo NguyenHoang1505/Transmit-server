@@ -46,6 +46,7 @@ data_handle['Số điện thoại']=''
 data_handle['Quận']=''
 data_handle['Loại mặt hàng']=''
 for i in range(data_handle.shape[0]):
+    print("Handle data ",i,".")
     try:
         data_handle['SĐT'][i]= str(data_handle['SĐT'][i]).replace("0","'0",1)
         copy=data_handle['Thời gian đăng'][i]
